@@ -1,19 +1,12 @@
-public class Circulo {
-    
+public class Circulo extends Geometria {
     private double raio;
-
 
     public Circulo(double raio) {
         this.raio = raio;
     }
-    
 
-    public double getRaio() {
-        return raio;
+    @Override
+    public double calcularArea() {
+        return Math.PI * Math.pow(raio, 2);
     }
-
-    public void setRaio(double raio) {
-        this.raio = raio;
-    }
-    
 }
